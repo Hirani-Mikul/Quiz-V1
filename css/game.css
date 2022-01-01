@@ -1,0 +1,96 @@
+.nav-bar {
+  margin-top: 20px;
+  width: 90%;
+}
+.navigate {
+  display: flex;
+  justify-content: space-between;
+}
+.navigate li {
+  display: flex;
+  list-style: none;
+}
+.choice-container {
+  display: flex;
+  font-size: 18px;
+  width: 100%;
+  margin-bottom: 7px;
+  border: 1px solid rgba(0, 255, 100, 0.5);
+  background-color: white;
+}
+.choice-container:hover {
+  cursor: pointer;
+  box-shadow: 0 5px 14px 0 rgba(14, 129, 20, 0.5);
+  transform: translateY(-2px);
+  transition: transform 100ms;
+}
+.choice-letter {
+  padding: 15px 25px;
+  background-color: rgb(31, 61, 231);
+  color: white;
+}
+.choice-text {
+  padding: 15px;
+  width: 100%;
+}
+.wrong > * {
+  color: white;
+}
+.correct > * {
+  color: white;
+}
+.show-correct > * {
+  color: white;
+}
+.wrong {
+  background-color: rgba(255, 0, 0, 0.7);
+}
+.correct {
+  background-color: rgba(0, 255, 0, 0.6);
+}
+.show-correct {
+  background-color: rgba(0, 255, 0, 0.3);
+}
+
+#hud {
+  margin: 10px;
+  border: 2px solid black;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.hud-text {
+  text-align: center;
+  font-size: 25px;
+}
+#score {
+  color: #333;
+  text-align: center;
+  text-decoration: none;
+  margin: 5px;
+}
+
+#progressBar {
+  width: 200px;
+  height: 40px;
+  margin: 10px 0 5px 5px;
+  border: 2px solid rgb(80, 15, 231);
+}
+#progressBarFull {
+  background-color: rgb(80, 15, 231, 0.7);
+  height: 38px;
+  width: 0%;
+}
+
+@media only screen and (max-width: 500px) {
+  .navigate {
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+  #hud {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+}

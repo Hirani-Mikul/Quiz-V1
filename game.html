@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Game</title>
+    <link rel="stylesheet" href="css/homepage.css" />
+    <link rel="stylesheet" href="css/game.css" />
+  </head>
+  <body>
+    <div class="container">
+      <header class="flex-box justify-content">
+        <nav class="nav-bar">
+          <ul class="navigate">
+            <li><a class="btn" href="index.html">Home</a></li>
+            <li><a class="btn" href="highscore.html">Highscore</a></li>
+          </ul>
+        </nav>
+      </header>
+      <div id="game" class="flex-box column">
+        <div id="hud" class="flex-box">
+          <div id="hud-items">
+            <p id="progressText" class="hud-text">Question</p>
+            <div id="progressBar">
+              <div id="progressBarFull"></div>
+            </div>
+          </div>
+          <div class="score">
+            <p class="hud-text">Score:</p>
+            <h1 id="score">0</h1>
+          </div>
+        </div>
+        <h2 id="question">What is your name?</h2>
+        <div class="choice-container">
+          <p class="choice-letter">A</p>
+          <p class="choice-text" data-number="1">Choice A</p>
+        </div>
+        <div class="choice-container">
+          <p class="choice-letter">B</p>
+          <p class="choice-text" data-number="2">Choice B</p>
+        </div>
+        <div class="choice-container">
+          <p class="choice-letter">C</p>
+          <p class="choice-text" data-number="3">Choice C</p>
+        </div>
+        <div class="choice-container">
+          <p class="choice-letter">D</p>
+          <p class="choice-text" data-number="4">Choice D</p>
+        </div>
+      </div>
+    </div>
+    <script src="js/Question.js"></script>
+    <script src="js/game.js"></script>
+  </body>
+</html>
